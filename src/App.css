@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 20px;
+}
+
+form {
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+}
+
+@media screen and (max-width: 575px) {
+  form {
+    width: 95%;
+    padding: 30px 20px;
+  }
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+textarea {
+  padding: 12px 16px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.hobbies {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.hobbies input {
+  flex: 1;
+}
+
+.btn {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #37f;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: rgb(37, 103, 235);
+}
+
+.btn-success {
+  background-color: rgb(16, 167, 24);
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: rgb(14, 151, 21);
+}
+
+.btn-danger {
+  background-color: rgb(211, 15, 15);
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: rgb(189, 10, 10);
+}
+
+.image_preview {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.image_preview > img {
+  width: 100%;
+}
+
+.error_message {
+  font-size: 13px;
+  color: red;
+  padding-left: 10px;
+}
